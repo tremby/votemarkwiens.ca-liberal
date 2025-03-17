@@ -1,0 +1,517 @@
+
+/** service-details **/
+
+.service-details{
+  position: relative;
+  padding: 120px 0px;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li{
+  position: relative;
+  display: block;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #222;
+  padding: 21px 40px;
+  background: #e7ecf2;
+  z-index: 1;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a:after{
+  position: absolute;
+  content: '';
+  background: #d2dbe4;
+  width: 1px;
+  height: 32px;
+  top: 19px;
+  right: 74px;
+  transition: all 500ms ease;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a.active:after,
+.service-details .service-sidebar .sidebar-categories .categories-list li a:hover:after{
+  background: rgba(255,255,255,0.2);
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a.active,
+.service-details .service-sidebar .sidebar-categories .categories-list li a:hover{
+  color: #fff;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a:before{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  transition: all 500ms ease;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a.active:before,
+.service-details .service-sidebar .sidebar-categories .categories-list li a:hover:before{
+  width: 100%;
+  left: 0px;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li:nth-child(2n+1) a{
+  background: #eff2f5;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a i{
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  float: right;
+  color: #c8d1db;
+  top: 2px;
+  transition: all 500ms ease;
+}
+
+.service-details .service-sidebar .sidebar-categories .categories-list li a.active i,
+.service-details .service-sidebar .sidebar-categories .categories-list li a:hover i{
+  color: #fff;
+}
+
+.service-details .service-sidebar .sidebar-widget{
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.service-details .service-sidebar .sidebar-widget:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details .service-sidebar .widget-title{
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.service-details .service-sidebar .widget-title h4{
+	font-size: 20px;
+	line-height: 30px;
+  margin: 0px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-title h4{
+  color: #fff;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-title:before{
+  background: #fff !important;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-title .dotted-box .dotted{
+  background: #fff !important;
+}
+
+.service-details .service-sidebar .sidebar-download{
+  display: block;
+  padding: 34px 35px 5px 35px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-title{
+  margin-bottom: 29px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li{
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 29px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li:last-child{
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li i{
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li h4{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li h4 a{
+  display: inline-block;
+  color: #fff;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li h4 a:hover{
+  text-decoration: underline;
+}
+
+.service-details .service-sidebar .sidebar-download .widget-content .download-list li span{
+  position: relative;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(255,255,255,0.7);
+  margin: 0px;
+}
+
+.service-details .service-sidebar .sidebar-categories-2{
+  padding: 33px 35px 39px 35px;
+  background: #eff2f5;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li{
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li a{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  padding: 2px 0px;
+  padding-left: 52px;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li a:before{
+  position: absolute;
+  content: '';
+  background: #d2dbe4;
+  width: 1px;
+  height: 100%;
+  left: 28px;
+  top: 0px;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li a:after{
+  position: absolute;
+  content: "\f102";
+  font-family: 'Flaticon', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c8d1db;
+  left: 0px;
+  top: 0px;
+  transition: all 500ms ease;
+}
+
+.service-details .service-sidebar .sidebar-categories-2 .categories-list li a:hover:after{
+  
+}
+
+.service-details .service-sidebar .sidebar-assessment{
+  padding: 33px 35px 40px 35px;
+  background: #eff2f5;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group input[type='text'],
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group input[type='email'],
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #222;
+  padding: 10px 20px;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group input::-webkit-input-placeholder{
+  color:#222;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group textarea::-webkit-input-placeholder{
+  color:#222;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group textarea{
+  height: 132px;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group input:focus,
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group textarea:focus{
+
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group .theme-btn-two{
+  padding: 14.5px 27px;
+}
+
+.service-details .service-sidebar .sidebar-assessment .assessment-form .form-group .theme-btn-two i{
+  margin-right: 10px;
+}
+
+.service-details .group-title{
+  position: relative;
+  display: block;
+  margin-bottom: 27px;
+}
+
+.service-details .group-title h2{
+  position: relative;
+  display: block;
+  font-size: 36px;
+  line-height: 45px;
+  color: #222;
+  margin: 0px;
+}
+
+.service-details .service-details-content .content-style-one .image-box{
+  position: relative;
+  display: block;
+  margin-bottom: 52px;
+}
+
+.service-details-content .image-box img{
+  width: 100%;
+}
+
+.service-details-content .content-style-one .text h3{
+  position: relative;
+  font-size: 22px;
+  line-height: 30px;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.service-details-content .content-style-one .text p{
+  margin-bottom: 28px;
+}
+
+.service-details-content .content-style-one .text p:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details-content .content-style-one{
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.service-details-content .two-column .content-box h3{
+	font-size: 22px;
+	line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.service-details-content .two-column .content-box span{
+  position: relative;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service-details-content .two-column .content-box .list li{
+  position: relative;
+  display: block;
+  font-weight: 300;
+}
+
+.service-details-content .two-column .content-box .list li a{
+  display: inline-block;
+  color: #2d5883;
+  line-height: 16px;
+  border-bottom: 1px solid #2d5883;
+}
+
+.service-details-content .two-column{
+  position: relative;
+  margin-bottom: 53px;
+}
+
+.service-details-content .content-style-two h3{
+	font-size: 22px;
+	line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.service-details-content .content-style-two .text{
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.service-details-content .content-style-two .inner-box .single-item{
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+}
+
+.service-details-content .content-style-two .inner-box .single-item:before{
+  position: absolute;
+  content: '';
+  background: #e0e6ed;
+  width: 1px;
+  height: 100%;
+  top: 0px;
+  right: -15px;
+}
+
+.service-details-content .content-style-two .inner-box .column:last-child .single-item:before{
+  display: none;
+}
+
+.service-details-content .content-style-two .inner-box .single-item .icon-box{
+  position: relative;
+  display: inline-block;
+  font-size: 70px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.service-details-content .content-style-two .inner-box .single-item h4{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service-details-content .content-style-two{
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.service-details-content .accordion-content h3{
+	font-size: 22px;
+	line-height: 30px;
+  margin-bottom: 19px;
+}
+
+.service-details-content .accordion-box .block{
+  position: relative;
+  display: block;
+  background: #fff;
+  margin-bottom: 15px;
+  transition: all 500ms ease;
+}
+
+.service-details-content .accordion-box .block:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details-content .accordion-box .block .acc-content{
+  position:relative;
+  display:none;
+  padding: 17px 20px 16px 35px;
+}
+
+.service-details-content .accordion-box .block .acc-content.current{
+  display:block;  
+}
+
+.service-details-content .accordion-box .block .acc-btn .icon-outer{
+	position: absolute;
+  top: 17px;
+  right: 29px;
+}
+
+.service-details-content .accordion-box .block .acc-btn{
+  position: relative;
+  display: block;
+  background: #eff2f5;
+  padding: 21px 35px;
+  padding-right: 60px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.service-details-content .accordion-box .block .acc-btn h5{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #222;
+  margin: 0px;
+  transition: all 500ms ease;
+}
+
+.service-details-content .accordion-box .block .acc-btn.active h5{
+  
+}
+
+.service-details-content .content-style-two .inner-box{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.service-details-content .content-style-two .inner-box .single-item .icon-box{
+
+}
+
+.service-details-content .content-style-two .inner-box .single-item h4{
+	font-size: 20px;
+	line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.service-details-content .two-column .content-box .list li{
+  padding-left: 25px;
+  margin-bottom: 4px;
+}
+
+.service-details-content .two-column .content-box .list li:last-child{
+  margin-bottom: 0px;
+}
+
+.service-details-content .two-column .content-box .list li:before{
+  position: absolute;
+  content: "\f00c";
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400;
+  font-size: 14px;
+  left: 0px;
+  top: 1px;
+}
+
+.service-details-content .two-column .text{
+  position: relative;
+  display: block;
+  margin-top: 53px;
+}
+
+.service-details-content .two-column .text h3{
+	font-size: 22px;
+	line-height: 30px;
+  margin-bottom: 15px;
+}

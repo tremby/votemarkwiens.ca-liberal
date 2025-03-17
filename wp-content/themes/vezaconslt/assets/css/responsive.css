@@ -1,0 +1,755 @@
+/* Responsive Css */
+
+
+
+@media only screen and (max-width: 1449px){
+
+  .main-header.style-two .header-lower{
+    padding: 0px 30px;
+  }
+
+  .main-header.style-two .header-lower .outer-box{
+    padding-left: 170px;
+  }
+
+  .main-header.style-two .main-menu .navigation > li{
+    margin: 0px 20px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+  .main-menu,
+  .sticky-header,
+  .main-header.style-one .outer-container:before{
+    display: none !important;
+  }
+
+  .menu-area .mobile-nav-toggler {
+    display: block;
+    padding: 10px;
+    margin-top: 27px;
+  }
+
+  .megamenu ul li:first-child{
+    display: none;
+  }
+
+  .service-section .pattern-layer{
+    display: none;
+  }
+
+  .main-header .nav-right{
+    margin-top: 24px;
+    margin-right: 15px;
+  }
+
+  .header-lower .logo-box{
+    bottom: 15px;
+  }
+
+  .header-top .social-links{
+    margin-right: 20px;
+  }
+
+  .coaching-block-one .inner-box .overlay-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cta-section .inner-container{
+    padding-right: 50px;
+  }
+
+  .cta-section .inner-container .image-box{
+    display: none;
+  }
+
+  .header-top{
+    padding-left: 0px;
+    background: #1b182f;
+  }
+
+  .header-lower .logo-box{
+    position: relative;
+    bottom: 0px;
+    padding: 15px 0px;
+    float: left;
+  }
+
+  .header-lower .outer-box{
+    padding-left: 0px;
+  }
+
+  .header-top .top-inner:before{
+    display: none;
+  }
+
+  .main-header.style-two .header-lower .outer-box{
+    padding-left: 0px;
+  }
+
+  .main-header.style-two .menu-area .mobile-nav-toggler{
+    margin-top: 40px;
+    background: #fff;
+  }
+
+  .main-header.style-two .header-lower .nav-right{
+    margin-right: 25px;
+  }
+
+  .banner-carousel .owl-nav{
+    right: 50px;
+  }
+
+  .service-style-two .pattern-layer{
+    display: none;
+  }
+
+  .team-section .owl-dots{
+    display: none;
+  }
+
+  .rtl .header-lower .outer-box{
+    padding-right: 0px;
+  }
+
+  .rtl .main-header .nav-right{
+    margin-right: 0px;
+    margin-left: 30px;
+  }
+
+  .content_block_3 .content-box{
+    margin-left: 0px;
+  }
+
+  .about-style-three .image_block_1 .image-box .text{
+    left: 0px;
+  }
+
+  .content_block_2 .content-box{
+    margin-left: 0px;
+  }
+
+  .content_block_2 .content-box .btn-box{
+    margin-bottom: 20px;
+  }
+
+  .team-section .inner-content{
+    margin-right: 0px;
+  }
+
+  .team-section .upper-box .text{
+    padding-right: 0px;
+  }
+
+  .chooseus-section .image-box{
+    margin-right: 0px;
+  }
+
+  .about-section .pattern-layer{
+    display: none;
+  }
+
+  .banner-section.style-two .content-box:before,
+  .banner-section.style-two .rotate-text{
+    display: none;
+  }
+
+  .rtl .header-top{
+    padding-right: 0px;
+  }
+
+  .rtl .header-top .social-links{
+    margin-left: 20px;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+  .main-menu .navigation > li > ul,
+  .main-menu .navigation > li > ul > li > ul,
+  .main-menu .navigation > li > .megamenu{
+    display:block !important;
+    visibility:hidden;
+    opacity:0;
+  }
+}
+
+
+
+@media only screen and (max-width: 991px){
+
+  .feature-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .image_block_1 .image-box .text{
+    left: 0px;
+  }
+
+  .service-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .country-section .inner-content{
+    margin-right: 0px;
+  }
+
+  .coaching-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .cta-section .inner-container .text,
+  .cta-section .inner-container .btn-box{
+    float: none;
+    display: block;
+  }
+
+  .cta-section .inner-container .btn-box{
+    margin-top: 15px;
+  }
+
+  .news-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .news-section{
+    padding-bottom: 90px;
+  }
+
+  .footer-widget{
+    margin: 0px 0px 30px 0px !important;
+  }
+
+  .main-footer .widget-section{
+    padding-bottom: 70px;
+  }
+
+  .country-style-two .upper-box .text{
+    margin-left: 0px;
+  }
+
+  .country-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .about-style-two .image-box{
+    margin-bottom: 30px;
+  }
+
+  .about-style-two .image-box .image-2{
+    left: 0px;
+  }
+
+  .list-style-one li{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .service-block-two .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .service-style-two{
+    padding-bottom: 90px;
+  }
+
+  .chooseus-section .image-box{
+    margin-bottom: 30px;
+  }
+
+  .chooseus-section .image-box .image img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .chooseus-section .content-box{
+    margin-left: 0px;
+  }
+
+  .processing-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .processing-block-one .inner-box .arrow{
+    display: none;
+  }
+
+  .process-section{
+    padding-bottom: 80px;
+  }
+
+  .header-top .left-column,
+  .header-top .right-column{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .header-top .info-list li{
+    float: none;
+  }
+
+  .header-top .right-column{
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .rtl .country-section .inner-content{
+    margin-left: 0px;
+  }
+
+  .rtl .cta-section .inner-container .btn-box{
+    text-align: right;
+  }
+
+  .about-style-three .image_block_1 .image-box{
+    margin-bottom: 30px;
+  }
+
+  .team-details .content-box{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+  .team-details .image-box{
+    margin-right: 0px;
+  }
+
+  .coaching-sidebar{
+    margin-bottom: 30px;
+  }
+
+  .blog-sidebar{
+    margin-top: 40px;
+  }
+
+  .contact-section .content-box{
+    margin-bottom: 40px;
+  }
+
+  .service-sidebar,
+  .service-details-content .content-style-two .inner-box .single-item{
+    margin-bottom: 30px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+	
+	.vezaconslt-comment-item > .vezaconslt-comment-item {
+		margin-left:0px;
+	}
+	
+	.rtl .vezaconslt-comment-item > .vezaconslt-comment-item {
+		margin-right:0px;
+	}
+
+  .banner-carousel .content-box h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .banner-carousel .content-box h1 br{
+    display: none;
+  }
+
+  .banner-carousel .slide-item{
+    padding-top: 100px;
+    padding-bottom: 170px;
+  }
+
+  .feature-section{
+    padding-top: 70px;
+  }
+
+  .about-section{
+    padding-top: 70px;
+  }
+
+  .sec-title h2{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .image_block_1 .image-box .image-2{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .image_block_1 .image-box{
+    padding-left: 0px;
+  }
+
+  .service-section{
+    padding: 65px 0px;
+  }
+
+  .country-section,
+  .testimonial-section{
+    padding: 70px 0px;
+  }
+
+  .testimonial-section .owl-dots{
+    display: none;
+  }
+
+  .testimonial-block-one .inner-box{
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .sec-pad{
+    padding: 65px 0px 70px 0px;
+  }
+
+  .coaching-section{
+    padding-bottom: 40px;
+  }
+
+  .cta-section .inner-container h2{
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .clients-section{
+    padding: 70px 0px;
+  }
+
+  .main-footer .top-inner .info-box{
+    margin-bottom: 30px;
+  }
+
+  .main-footer .footer-top{
+    padding-bottom: 20px;
+  }
+
+  .main-footer .widget-section{
+    padding: 70px 0px 40px 0px;
+  }
+
+  .main-header .nav-right .info-box{
+    display: none;
+  }
+
+  .country-style-two{
+    padding-top: 65px;
+  }
+
+  .about-style-two{
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .service-style-two{
+    padding-bottom: 45px;
+  }
+
+  .chooseus-section{
+    padding-top: 0px;
+  }
+
+  .chooseus-section .bg-layer,
+  .chooseus-section .image-layer{
+    display: none;
+  }
+
+  .chooseus-section .content-box .inner{
+    margin-bottom: 50px;
+  }
+
+  .chooseus-section .counter-block-one .inner-box:before{
+    display: none;
+  }
+
+  .chooseus-section .counter-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .chooseus-section .counter-block:last-child .counter-block-one .inner-box{
+    margin-bottom: 0px;
+  }
+
+  .process-section{
+    padding: 65px 0px 40px 0px;
+  }
+
+  .rtl .content_block_1 .content-box{
+    margin-left: 0px;
+    padding-bottom: 40px;
+  }
+
+  .service-section .inner-container{
+    padding-bottom: 40px;
+  }
+
+  .cta-section.pb_120{
+    padding-bottom: 70px;
+  }
+
+  .team-block-one .inner-box{
+    margin-bottom: 30px;
+  }
+
+  .team-page-section{
+    padding: 70px 0px 40px 0px;
+  }
+
+  .page-title .content-box{
+    padding: 80px 0px 120px 0px;
+  }
+
+  .team-details,
+  .coaching-details,
+  .sidebar-page-container,
+  .contact-section{
+    padding: 70px 0px;
+  }
+
+  .coaching-section.pt_120.pb_120{
+    padding: 70px 0px 40px 0px;
+  }
+
+  .coaching-details-content .content-three .image-box{
+    margin-bottom: 30px;
+  }
+
+  .service-section .bg-layer{
+    display: none;
+  }
+
+  .country-section .sec-title{
+    margin-right: 0px;
+  }
+
+  .cta-section .inner-container{
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .news-section .upper-box .btn-box{
+    text-align: left !important;
+  }
+
+  .content_block_1 .content-box{
+    margin-right: 0px;
+  }
+
+  .sec-title h2 br{
+    display: none;
+  }
+
+  .team-section{
+    padding-bottom: 40px;
+  }
+
+  .content_block_3 .content-box .inner .single-item:before{
+    display: none;
+  }
+
+  .service-details-content .image-box img{
+    margin-bottom: 30px;
+  }
+
+  .service-details{
+    padding: 70px 0px;
+  }
+
+}
+
+@media only screen and (max-width: 599px){
+
+  .cta-section .inner-container h2 br{
+    display: none;
+  }
+
+  .cta-section .inner-container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-footer .top-inner{
+    display: block;
+    text-align: center;
+  }
+
+  .main-footer .top-inner .info-box{
+    display: inline-block;
+    text-align: left;
+  }
+
+  .footer-logo{
+    margin-bottom: 30px;
+  }
+
+  .banner-carousel .owl-nav{
+    display: none;
+  }
+
+  .banner-carousel .slide-item{
+    padding-bottom: 100px;
+  }
+
+  .about-style-two .image-box{
+    margin-right: 0px;
+  }
+
+  .about-style-two .image-box .image-2{
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .chooseus-section .content-box .inner .image-box{
+    position: relative;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .chooseus-section .content-box .inner{
+    padding-left: 0px;
+  }
+
+  .main-footer .image-layer{
+    display: none;
+  }
+
+  .coaching-details-content .content-two .single-item{
+    width: 100%;
+  }
+
+  .blog-details-content .post-share-option .tags-list{
+    float: none;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .blog-details-content .post-share-option .social-links{
+    float: none;
+    display: block;
+  }
+
+  .blog-details-content .author-box{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .blog-details-content .author-box .image-box{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .blog-details-content .comment-box .comment{
+    padding-left: 0px;
+  }
+
+  .blog-details-content .comment-box .comment .thumb-box{
+    position: relative;
+    top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .blog-details-content .comment-box .comment .reply-btn{
+    position: relative;
+    top: 0px;
+    margin-top: 15px;
+  }
+
+  .content_block_1 .content-box .list-style-one li{
+    width: 100%;
+  }
+
+  .content_block_1 .content-box{
+    padding-bottom: 50px;
+  }
+
+  .coaching-details-content .content-two .single-item{
+    padding-left: 30px;
+  }
+
+  .coaching-details-content .content-two .single-item:first-child{
+    padding-bottom: 0px;
+  }
+
+}
+
+
+@media only screen and (max-width: 499px){
+
+  .mobile-menu{
+    width: 100%;
+  }
+
+  .chooseus-section .image-box .video-btn a{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .main-header.style-two .header-lower .search-box-outer:before{
+    display: none;
+  }
+
+  .image_block_1 .image-box .text-two{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    left: 0px;
+  }
+
+  .error-section h1{
+    font-size: 140px;
+    line-height: 140px;
+  }
+
+  .coaching-sidebar .download-widget{
+    padding-left: 30px;
+  }
+
+  .news-block-one .inner-box h2{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .blog-sidebar .sidebar-widget{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .blog-details-content .post-share-option .tags-list li{
+    margin-bottom: 10px;
+  }
+
+  .blog-details-content .post-share-option .tags-list li:last-child{
+    margin-bottom: 0px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 399px){
+
+  .header-top .btn-box{
+    display: none;
+  }
+
+  .contact-section .info-inner .inner{
+    padding-left: 30px;
+  }
+
+}

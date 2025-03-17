@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2025 by original authors @ fontello.com</metadata>
+<defs>
+<font id="tiktok" horiz-adv-x="1000" >
+<font-face font-family="tiktok" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="tiktok-brands-solid" unicode="&#xe800;" d="M875 440a410 410 0 0 0-240 77v-349a318 318 0 1 0-274 314v-175a146 146 0 1 1 102-139v682l172 0a237 237 0 0 1 4-43h0a239 239 0 0 1 105-157 237 237 0 0 1 131-39z" horiz-adv-x="875" />
+</font>
+</defs>
+</svg>
