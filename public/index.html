@@ -86,6 +86,9 @@
 		<style type="text/css" id="wp-custom-css">
 
 		</style>
+		<style type="text/css">
+			.hidden { display: none; }
+		</style>
 	</head>
 
 
@@ -250,7 +253,7 @@
 
 
 									<div class='fluentform ff-default fluentform_wrapper_4 ffs_default_wrap'>
-										<form netlify name="join-my-team" id="fluentform_4" class="frm-fluent-form fluent_form_4 ff-el-form-top ff_form_instance_4_1 ff-form-loading ffs_default" method="POST" >
+										<form netlify netlify-honeypot="truly-important-information" name="join-my-team" id="fluentform_4" class="frm-fluent-form fluent_form_4 ff-el-form-top ff_form_instance_4_1 ff-form-loading ffs_default" method="POST" >
 											<fieldset  style="border: none!important;margin: 0!important;padding: 0!important;background-color: transparent!important;box-shadow: none!important;outline: none!important; min-inline-size: 100%;">
 												<legend class="ff_screen_reader_title" style="display: block; margin: 0!important;padding: 0!important;height: 0!important;text-indent: -999999px;width: 0!important;overflow:hidden;">
 													Join Team
@@ -316,6 +319,12 @@
 															<option value="I&#039;m interested in a leadership position"  >I'm interested in a leadership position</option>
 														</select>
 													</div>
+												</div>
+												<div class="hidden">
+													<label>
+														Don't fill this field:
+														<input type="text" name="truly-important-information" />
+													</label>
 												</div>
 												<div class='ff-el-group ff-text-left ff_submit_btn_wrapper'>
 													<button type="submit" class="ff-btn ff-btn-submit ff-btn-lg ff_btn_style" >Join my team!</button>
