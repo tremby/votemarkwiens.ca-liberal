@@ -193,7 +193,7 @@
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 500;
-	color: #73727c;
+	color: black;
 }
 
 .blog-sidebar .category-list li a:hover{
@@ -213,7 +213,7 @@
 	display: inline-block;
 	font-size: 11px;
 	line-height: 20px;
-	color: #73727c;
+	color: black;
 	font-weight: 700;
 	text-transform: uppercase;
 	background: #fff;
@@ -317,7 +317,7 @@
 	text-align: center;
 	border-radius: 50%;
 	background: #f1f0f7;
-	color: #73727c;
+	color: black;
 }
 
 .blog-details-content .post-share-option .social-links li a:hover{
