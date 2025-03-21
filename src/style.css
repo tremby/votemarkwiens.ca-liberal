@@ -796,7 +796,7 @@ dl.grid {
 		padding: calc(var(--padding-std) * 4) var(--padding-std);
 		display: grid;
 		grid-template-areas: "logo" "contact" "fineprint";
-		gap: var(--padding-std);
+		gap: calc(var(--padding-std) * 2);
 		text-align: center;
 
 		@media only screen and (min-width: 35em) {
