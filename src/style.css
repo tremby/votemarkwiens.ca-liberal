@@ -65,10 +65,8 @@ html {
 	scroll-padding-top: var(--header-height);
 	scroll-behavior: smooth;
 	accent-color: var(--accent-yellow);
-}
 
-@media (prefers-reduced-motion) {
-	html {
+	@media (prefers-reduced-motion) {
 		scroll-behavior: initial;
 	}
 }
@@ -350,18 +348,16 @@ dl.grid {
 		}
 	}
 
-	#desktop-nav {
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 46em) {
-	#header {
-		#nav-toggle {
+	#nav-toggle {
+		@media only screen and (min-width: 46em) {
 			display: none;
 		}
+	}
 
-		#desktop-nav {
+	#desktop-nav {
+		display: none;
+
+		@media only screen and (min-width: 46em) {
 			display: block;
 			font-family: var(--font-condensed);
 			font-size: 1.2rem;
@@ -426,6 +422,18 @@ dl.grid {
 	transition: transform 200ms;
 	place-items: center;
 
+	@media (prefers-reduced-motion) {
+		transition-property: none;
+	}
+
+	&.is-open {
+		transform: translateY(0);
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+
 	ul {
 		display: flex;
 		flex-direction: column;
@@ -436,20 +444,6 @@ dl.grid {
 			text-decoration: none;
 		}
 	}
-}
-
-@media (prefers-reduced-motion) {
-	#main-nav {
-		transition-property: none;
-	}
-}
-
-#main-nav.is-open {
-	transform: translateY(0);
-}
-
-#main-nav:focus-visible {
-	outline: none;
 }
 
 #hero {
@@ -490,6 +484,11 @@ dl.grid {
 		margin-top: var(--padding-std);
 		width: 42.67vw;
 		height: auto;
+
+		@media only screen and (min-width: 28em) {
+			width: 48vw;
+			max-width: 422px;
+		}
 	}
 
 	.tagline {
@@ -553,15 +552,6 @@ dl.grid {
 	}
 }
 
-@media only screen and (min-width: 28em) {
-	#hero {
-		.portrait-image {
-			width: 48vw;
-			max-width: 422px;
-		}
-	}
-}
-
 #meet-mark {
 	background: color-mix(in lch, var(--liberal-grey), black 20%);
 	color-scheme: dark;
@@ -575,6 +565,11 @@ dl.grid {
 		max-width: 280px;
 		height: auto;
 		border-radius: 3px;
+
+		@media only screen and (min-width: 50em) {
+			width: 384px;
+			max-width: none;
+		}
 	}
 
 	.family-image {
@@ -583,83 +578,40 @@ dl.grid {
 		width: 53.33vw;
 		height: auto;
 		max-width: 280px;
-	}
-	
-	#family-image-1 {
 		margin-left: calc(0px - var(--padding-std));
 		shape-outside: polygon(0% 0%, 48% 0%, 49.3% 17.6%, 51.1% 18.6%, 51% 24%, 48% 27.3%, 67.9% 27.3%, 75.1% 29.9%, 78% 35.7%, 80.8% 49.7%, 84.4% 57.2%, 94.8% 65.7%, 100% 71.1%, 100% 84.4%, 88.5% 84.4%, 88.5% 100%, 0% 100%);
 		shape-margin: calc(0.5em - var(--padding-std)); /* Negative margin-left is not accounted for by the browser */
-	}
 
-	#family-image-2, #family-image-3, #family-image-4, #family-image-5 {
-		display: none;
-	}
-
-	#meet-clearfix {
-		margin-bottom: calc(0px - var(--padding-section));
-	}
-}
-
-@media only screen and (min-width: 28em) {
-	#meet-mark {
-		#family-image-1 {
-			display: none;
-		}
-
-		#family-image-2 {
-			display: inline;
-		}
-
-		.family-image {
+		@media only screen and (min-width: 28em) {
 			margin-left: 0;
 			shape-outside: polygon(0% 0%, 52.4% 0%, 53.6% 17.6%, 55.2% 18.6%, 55.1% 24%, 52.4% 27.3%, 70.2% 27.3%, 76.6% 29.9%, 79.2% 35.7%, 81.7% 49.7%, 84.9% 57.2%, 94.2% 65.7%, 98.9% 71.1%, 98.9% 84.4%, 88.6% 84.4%, 88.6% 100%, 0% 100%);
 			shape-margin: var(--padding-std);
 		}
 	}
-}
-
-@media only screen and (min-width: 35em) {
-	#meet-mark {
-		#family-image-2 {
-			display: none;
-		}
-
-		#family-image-3 {
-			display: inline;
-		}
+	
+	#family-image-2, #family-image-3, #family-image-4, #family-image-5 {
+		display: none;
 	}
-}
 
-@media only screen and (min-width: 46em) {
-	#meet-mark {
-		#family-image-3 {
-			display: none;
-		}
-
-		#family-image-4 {
-			display: inline;
-		}
+	@media only screen and (min-width: 28em) {
+		#family-image-1 { display: none; }
+		#family-image-2 { display: inline; }
 	}
-}
-
-@media only screen and (min-width: 50em) {
-	#meet-mark {
-		.mark-at-park {
-			width: 384px;
-			max-width: none;
-		}
+	@media only screen and (min-width: 35em) {
+		#family-image-2 { display: none; }
+		#family-image-3 { display: inline; }
 	}
-}
+	@media only screen and (min-width: 46em) {
+		#family-image-3 { display: none; }
+		#family-image-4 { display: inline; }
+	}
+	@media only screen and (min-width: 51em) {
+		#family-image-4 { display: none; }
+		#family-image-5 { display: inline; }
+	}
 
-@media only screen and (min-width: 51em) {
-	#meet-mark {
-		#family-image-4 {
-			display: none;
-		}
-
-		#family-image-5 {
-			display: inline;
-		}
+	#meet-clearfix {
+		margin-bottom: calc(0px - var(--padding-section));
 	}
 }
 
@@ -670,6 +622,13 @@ dl.grid {
 		border-radius: 3px;
 		width: 100%;
 		height: auto;
+
+		@media only screen and (min-width: 35em) {
+			width: 50vw;
+			max-width: 512px;
+			float: left;
+			margin: 0.1em 0.5em 0.1em 0;
+		}
 	}
 
 	#mark-at-grocer {
@@ -679,15 +638,6 @@ dl.grid {
 		width: 48vw;
 		max-width: 300px;
 		height: auto;
-	}
-}
-
-@media only screen and (min-width: 35em) {
-	#why-mark #team-with-flyers {
-		width: 50vw;
-		max-width: 512px;
-		float: left;
-		margin: 0.1em 0.5em 0.1em 0;
 	}
 }
 
