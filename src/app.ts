@@ -83,11 +83,16 @@ function initScrollSpy() {
 	update();
 }
 
+function detectSafari() {
+	document.documentElement.classList.toggle("is-safari", !/chrome|android/i.test(navigator.userAgent) && /safari/i.test(navigator.userAgent));
+}
+
 function init() {
 	selectOrFail("#nav-toggle", HTMLButtonElement).addEventListener("click", () => toggleNav());
 	selectOrFail("#main-nav").addEventListener("click", handleNavClick);
 	selectOrFail("body").addEventListener("keydown", handleRootKeydown);
 	initScrollSpy();
+	detectSafari();
 }
 
 init();

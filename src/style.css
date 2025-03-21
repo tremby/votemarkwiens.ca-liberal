@@ -250,6 +250,11 @@ form.styled {
 		color: black;
 	}
 
+	.is-safari & select {
+		height: 2.22em; /* IOS and desktop won't take padding into account */
+		accent-color: auto; /* IOS sets the text colour to accent colour */
+	}
+
 	input[type="radio"] {
 		width: 1.2rem;
 		height: 1.2rem;
