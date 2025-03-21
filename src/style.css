@@ -306,7 +306,6 @@ dl.grid {
 
 	.content {
 		background: var(--liberal-red);
-		color-scheme: dark;
 		color: white;
 		padding: var(--padding-std);
 	}
@@ -403,7 +402,6 @@ dl.grid {
 #main-nav {
 	display: grid;
 	background: var(--liberal-red-shade-1);
-	color-scheme: dark;
 	color: white;
 	height: calc(100vh - var(--header-height));
 	width: 100%;
@@ -449,7 +447,6 @@ dl.grid {
 #hero {
 	position: relative;
 	background: var(--accent-steel);
-	color-scheme: dark;
 	color: white;
 	overflow: hidden;
 
@@ -554,7 +551,6 @@ dl.grid {
 
 #meet-mark {
 	background: color-mix(in lch, var(--liberal-grey), black 20%);
-	color-scheme: dark;
 	color: white;
 	padding: var(--padding-section) var(--padding-std);
 
@@ -644,7 +640,6 @@ dl.grid {
 #get-involved {
 	padding: var(--padding-section) var(--padding-std);
 	background: var(--liberal-red-shade-2);
-	color-scheme: dark;
 	color: white;
 
 	form button[type="submit"] {
@@ -695,7 +690,6 @@ dl.grid {
 #request-a-sign {
 	padding: var(--padding-section) var(--padding-std);
 	background: var(--liberal-red-shade-3);
-	color-scheme: dark;
 	color: white;
 
 	form button[type="submit"] {
@@ -738,7 +732,6 @@ dl.grid {
 
 #footer {
 	background: var(--liberal-red);
-	color-scheme: dark;
 	color: white;
 	padding-bottom: calc(var(--padding-std) * 8);
 
