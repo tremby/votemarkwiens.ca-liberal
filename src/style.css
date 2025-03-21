@@ -592,8 +592,6 @@ dl.grid {
 }
 
 #meet-mark {
-	background: color-mix(in lch, var(--liberal-grey), black 20%);
-	color: white;
 	padding: var(--padding-section) var(--padding-std);
 
 	#mark-at-park {
@@ -656,6 +654,8 @@ dl.grid {
 }
 
 #why-mark {
+	background: var(--liberal-grey);
+	color: white;
 	padding: var(--padding-section) var(--padding-std);
 
 	#team-with-flyers {
@@ -685,8 +685,6 @@ dl.grid {
 
 #get-involved {
 	padding: var(--padding-section) var(--padding-std);
-	background: var(--liberal-red-shade-2);
-	color: white;
 
 	form button[type="submit"] {
 		margin-top: var(--padding-std);
