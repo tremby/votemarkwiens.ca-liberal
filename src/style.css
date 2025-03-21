@@ -240,10 +240,6 @@ form.styled {
 		row-gap: calc(var(--padding-std) / 4);
 	}
 
-	label {
-		font-weight: 900;
-	}
-
 	:is(input:is([type="text"], [type="email"], [type="tel"]), textarea, select) {
 		font-family: inherit;
 		font-size: inherit;
