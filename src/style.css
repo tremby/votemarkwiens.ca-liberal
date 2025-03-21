@@ -458,7 +458,7 @@ dl.grid {
 
 #hero {
 	position: relative;
-	background: var(--accent-green);
+	background: var(--accent-steel);
 	color-scheme: dark;
 	color: white;
 	overflow: hidden;
