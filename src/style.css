@@ -240,7 +240,7 @@ form.styled {
 		row-gap: calc(var(--padding-std) / 4);
 	}
 
-	:is(input:is([type="text"], [type="email"], [type="tel"]), textarea, select) {
+	input:is([type="text"], [type="email"], [type="tel"]), textarea, select {
 		font-family: inherit;
 		font-size: inherit;
 		border-radius: 3px;
