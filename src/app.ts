@@ -34,6 +34,12 @@ function handleRootKeydown(event: KeyboardEvent) {
 	toggleNav(false);
 }
 
+function closeNavIfNoHamburger() {
+	if (!selectOrFail("#nav-toggle").checkVisibility()) {
+		toggleNav(false);
+	}
+}
+
 function initScrollSpy() {
 	let lockTimer: ReturnType<typeof setTimeout> | null = null;
 	let dirty = false;
@@ -92,6 +98,7 @@ function init() {
 	selectOrFail("#nav-toggle", HTMLButtonElement).addEventListener("click", () => toggleNav());
 	selectOrFail("#main-nav").addEventListener("click", handleNavClick);
 	window.addEventListener("keydown", handleRootKeydown);
+	window.addEventListener("resize", closeNavIfNoHamburger);
 	initScrollSpy();
 	detectSafari();
 }
