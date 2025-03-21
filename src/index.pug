@@ -70,28 +70,28 @@ html(lang="en-CA")
 						small for Vancouver East
 
 			section.padded-x#meet-mark
-				picture
-					+source("mark-at-park.jpg", [3456, 5184], [384, 768, 1152], {
-						rect: "192,1324,3264,3440",
-						gam: -25,
-						con: 30,
-						vib: 10,
-					})(
-						media="(min-width: 50em)"
-						sizes="auto, 384px"
-					)
-					+img("mark-at-park.jpg", [3456, 5184], [140, 280, 420], {
-						rect: "580,1324,2468,3440",
-						gam: -25,
-						con: 30,
-						vib: 10,
-					})(
-						id="mark-at-park"
-						alt="Mark Wiens stands wearing a red jacket in front of a park and smiles at the camera"
-						sizes="auto, 37.3333vw"
-						loading="lazy"
-					)
 				.prose.constrain-width
+					picture
+						+source("mark-at-park.jpg", [3456, 5184], [384, 768, 1152], {
+							rect: "192,1324,3264,3440",
+							gam: -25,
+							con: 30,
+							vib: 10,
+						})(
+							media="(min-width: 50em)"
+							sizes="auto, 384px"
+						)
+						+img("mark-at-park.jpg", [3456, 5184], [140, 280, 420], {
+							rect: "580,1324,2468,3440",
+							gam: -25,
+							con: 30,
+							vib: 10,
+						})(
+							id="mark-at-park"
+							alt="Mark Wiens stands wearing a red jacket in front of a park and smiles at the camera"
+							sizes="auto, 37.3333vw"
+							loading="lazy"
+						)
 					h2 Meet Mark
 					p
 						| Born and raised in East Vancouver as a third generation East Vancouver resident, Mark Wiens is an exemplary community leader and family man.
