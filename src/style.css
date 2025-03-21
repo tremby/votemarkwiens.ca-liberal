@@ -147,6 +147,10 @@ fieldset {
 
 legend {
 	padding: 0;
+
+	.is-safari & {
+		width: max-content; /* IOS splits the line. height: 100% doesn't solve it. */
+	}
 }
 
 textarea {
