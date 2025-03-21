@@ -50,6 +50,8 @@
 	--padding-std: 16px;
 	--header-logo-size: clamp(2.75rem, 12vw, 3.5rem);
 	--base-font-size: 18px;
+	--float-image-margin-y: 0.1em;
+	--float-image-margin-x: 0.5em;
 
 	/* Calculated */
 	--header-height: calc(var(--header-logo-size) + var(--padding-std) * 2);
@@ -556,7 +558,8 @@ dl.grid {
 
 	#mark-at-park {
 		float: right;
-		margin: 0.1em 0 0.1em 0.5em;
+		margin-block: var(--float-image-margin-y);
+		margin-left: var(--float-image-margin-x);
 		width: 37.3333vw;
 		max-width: 280px;
 		height: auto;
@@ -570,18 +573,19 @@ dl.grid {
 
 	.family-image {
 		float: left;
-		margin: 0.1em 0.5em 0 0;
+		margin-top: var(--float-image-margin-y);
+		margin-right: var(--float-image-margin-x);
 		width: 53.33vw;
 		height: auto;
 		max-width: 280px;
 		margin-left: calc(0px - var(--padding-std));
 		shape-outside: polygon(0% 0%, 48% 0%, 49.3% 17.6%, 51.1% 18.6%, 51% 24%, 48% 27.3%, 67.9% 27.3%, 75.1% 29.9%, 78% 35.7%, 80.8% 49.7%, 84.4% 57.2%, 94.8% 65.7%, 100% 71.1%, 100% 84.4%, 88.5% 84.4%, 88.5% 100%, 0% 100%);
-		shape-margin: calc(0.5em - var(--padding-std)); /* Negative margin-left is not accounted for by the browser */
+		shape-margin: calc(var(--float-image-margin-x) - var(--padding-std)); /* Negative margin-left is not accounted for by the browser */
 
 		@media only screen and (min-width: 28em) {
 			margin-left: 0;
 			shape-outside: polygon(0% 0%, 52.4% 0%, 53.6% 17.6%, 55.2% 18.6%, 55.1% 24%, 52.4% 27.3%, 70.2% 27.3%, 76.6% 29.9%, 79.2% 35.7%, 81.7% 49.7%, 84.9% 57.2%, 94.2% 65.7%, 98.9% 71.1%, 98.9% 84.4%, 88.6% 84.4%, 88.6% 100%, 0% 100%);
-			shape-margin: var(--padding-std);
+			shape-margin: var(--float-image-margin-x);
 		}
 	}
 	
@@ -623,14 +627,16 @@ dl.grid {
 			width: 50vw;
 			max-width: 512px;
 			float: left;
-			margin: 0.1em 0.5em 0.1em 0;
+			margin-block: var(--float-image-margin-y);
+			margin-right: var(--float-image-margin-x);
 		}
 	}
 
 	#mark-at-grocer {
 		border-radius: 3px;
 		float: right;
-		margin: 0.1em 0 0.1em 0.5em;
+		margin-block: var(--float-image-margin-y);
+		margin-left: var(--float-image-margin-x);
 		width: 48vw;
 		max-width: 300px;
 		height: auto;
