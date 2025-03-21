@@ -1,0 +1,35 @@
+{
+  "name": "votemarkwiens.ca",
+  "version": "1.0.0",
+  "description": "Website for votemarkwiens.ca",
+  "scripts": {
+    "clean": "rm --verbose --recursive --force dist",
+    "build:init": "npm run clean && mkdir --verbose --parents dist",
+    "build:static": "cp --verbose --recursive static/* dist",
+    "build:html": "node render-pug.js",
+    "build:js": "tsc",
+    "build": "npm run build:init && npm run build:static && npm run build:html && npm run build:js",
+    "watch:html": "inotifywait --recursive --quiet --monitor --event CLOSE_WRITE --format %f src | while read path; do echo \"$path changed, with $(timeout 0.2 cat | wc -l) others\"; npm run build:html; npm run build:js; done",
+    "watch": "npm run watch:html",
+    "serve": "python3 -m http.server -d dist",
+    "dev": "npm run build:init && (cd dist && ln --force --symbolic ../static/* .) && npm run build:html && npm run build:js && concurrently \"npm:watch\" \"npm:serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tremby/votemarkwiens.ca-liberal.git"
+  },
+  "author": "Bart Nagel <bart@tremby.net>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tremby/votemarkwiens.ca-liberal/issues"
+  },
+  "homepage": "https://github.com/tremby/votemarkwiens.ca-liberal#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pug": "^3.0.3",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

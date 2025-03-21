@@ -1,0 +1,4 @@
+Textual content by Mark Wiens
+Based on a design by Ricky Mai
+Green background photo by Ricky Mai
+Programming by Bart Nagel <b@rtnagel.ca>

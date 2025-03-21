@@ -1,0 +1,295 @@
+mixin img(src, dimensions, widths, options)
+	img(
+		src=imgixSrc(src, widths[0], options)
+		srcset=imgixSrcset(src, widths, options)
+	)&attributes({ ...nominalDimensions(dimensions, widths, options), ...attributes })
+
+mixin source(src, dimensions, widths, options)
+	source(
+		srcset=imgixSrcset(src, widths, options)
+	)&attributes({ ...nominalDimensions(dimensions, widths, options), ...attributes })
+
+doctype html
+html(lang="en-CA")
+	head
+		include partial/head.pug
+	body
+		a#skip-link.visually-hidden.focusable(href="#main") Skip to main content
+		header#header
+			include partial/header.pug
+		main#main
+			section#hero
+				picture.bg-image-picture
+					+source("background.jpg", [4000, 2669], widthsFull, { ar: "3:1" })(
+						media="(min-width: 100em)"
+						sizes="auto, 100vw"
+					)
+					+source("background.jpg", [4000, 2669], widthsFull, { ar: "16:9" })(
+						media="(min-width: 64em)"
+						sizes="auto, 100vw"
+					)
+					+img("background.jpg", [4000, 2669], widthsFull, { rect: "200,500,2500,1669", ar: "4:3" })(
+						alt=""
+						sizes="auto, 100vw"
+						loading="lazy"
+						class="bg-image"
+					)
+
+				svg.swoop#swoop-1(width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none")
+					path(
+						d="M 0,100 C 12.791071,53.496295 49.303352,11.848472 100,0 c 14.95086,-3.4942123 54.14741,-9.1294995 57.37012,-10 H -10 V 147.8961 C -9.1169698,144.52035 -1.2973446,104.71668 0,100 Z"
+						vector-effect="non-scaling-stroke"
+					)
+				svg.swoop#swoop-2(width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none")
+					path(
+						d="M 100,100 C 87.20905,53.496295 50.696768,11.848472 0,0 -14.95074,-3.4942123 -54.14729,-9.1294995 -57.37,-10 h 167.37012 v 157.8961 c -0.88303,-3.37575 -8.70266,-43.17942 -10,-47.8961 z"
+						vector-effect="non-scaling-stroke"
+					)
+
+				.grid.constrain-width
+					picture.portrait-image-picture
+						+source("mark-portrait.png", [6302, 8359], [215, 422, 844, 1266], {})(
+							media="(min-width: 28em)"
+							sizes="auto, (min-width: 55em) 422px, 48vw"
+						)
+						+img("mark-portrait.png", [6302, 8359], [160, 320, 480], { rect: "0.17,0,5231,8359" })(
+							alt="Mark Wiens smiles at the camera, wearing a suit and tie"
+							sizes="auto, 42.67vw"
+							loading="lazy"
+							class="portrait-image"
+						)
+
+					.tagline
+						| Elect
+						|
+						svg(width="32" height="32" viewBox="0 0 32 32" aria-hidden="true")
+							use(xlink:href="/maple-leaf.svg#maple-leaf")
+						|
+						big Mark Wiens
+						|
+						small for Vancouver East
+
+			section.padded-x#meet-mark
+				picture
+					+source("mark-at-park.jpg", [3456, 5184], [384, 768, 1152], {
+						rect: "192,1324,3264,3440",
+						gam: -25,
+						con: 30,
+						vib: 10,
+					})(
+						media="(min-width: 50em)"
+						sizes="auto, 384px"
+					)
+					+img("mark-at-park.jpg", [3456, 5184], [140, 280, 420], {
+						rect: "580,1324,2468,3440",
+						gam: -25,
+						con: 30,
+						vib: 10,
+					})(
+						id="mark-at-park"
+						alt="Mark Wiens stands wearing a red jacket in front of a park and smiles at the camera"
+						sizes="auto, 37.3333vw"
+						loading="lazy"
+					)
+				.prose.constrain-width
+					h2 Meet Mark
+					p
+						| Born and raised in East Vancouver as a third
+						| generation East Vancouver resident, Mark Wiens is an
+						| exemplary community leader and family man. Mark’s
+						| dedication to the community is demonstrated by his
+						| extensive work and contribution to many multicultural
+						| and community organizations.
+					p
+						| Before deciding to run in this election, Mark achieved
+						| a high level of success in the real estate industry,
+						| having helped hundreds of families make the right move
+						| for them, and being eligible to be licensed at the
+						| highest possible licensing level. Mark serves the
+						| profession and the public at large as a Director at
+						| Greater Vancouver Realtors, the Vancouver member-based
+						| professional association representing around 15,000
+						| Realtors.
+						|
+						+img("family.png", [4256, 4799], [280, 560, 720, 840], {})(
+							id="family-image-5"
+							class="family-image"
+							alt="Mark Wiens stands smiling next to his wife, and holds his small child"
+							sizes="auto, 280px"
+							loading="lazy"
+						)
+						|
+						| Prior to entering the real estate industry,
+						| Mark was an owner and operator of a successful
+						| landscape maintenance company employing several staff
+						| members.
+					+img("family.png", [4256, 4799], [280, 560, 720, 840], {})(
+						id="family-image-4"
+						class="family-image"
+						alt="Mark Wiens stands smiling next to his wife, and holds his small child"
+						sizes="auto, 280px"
+						loading="lazy"
+					)
+					p
+						| To better engage with the community around him, Mark
+						| started studying Mandarin Chinese at university and
+						| continues to build on his language skills.
+						|
+						+img("family.png", [4256, 4799], [280, 560, 720, 840], {})(
+							id="family-image-3"
+							class="family-image"
+							alt="Mark Wiens stands smiling next to his wife, and holds his small child"
+							sizes="auto, 280px"
+							loading="lazy"
+						)
+						|
+						| His success stems from helping those around him,
+						| working hard, and listening to others.
+						|
+						+img("family.png", [4256, 4799], [240, 280, 560, 720], {})(
+							id="family-image-2"
+							class="family-image"
+							alt="Mark Wiens stands smiling next to his wife, and holds his small child"
+							sizes="auto, (min-width: 32em) 280px, 53.33vw"
+							loading="lazy"
+						)
+						|
+						| This is the same approach he will take when serving as
+						| the next Member of Parliament for Vancouver East.
+					+img("family.png", [4256, 4799], [200, 400, 600], { rect: "453,0,3803,4799" })(
+						id="family-image-1"
+						class="family-image"
+						alt="Mark Wiens stands smiling next to his wife, and holds his small child"
+						sizes="auto, 53.33vw"
+						loading="lazy"
+					)
+					p
+						| In his free time, Mark enjoys spending time with his
+						| wife, two boys and two corgis.
+
+					.clearfix#meet-clearfix
+
+			section.padded-x#why-mark
+				.prose.constrain-width
+					h2 Why Mark?
+					p
+						| One hundred years ago my descendants came to Canada
+						| with nothing, and our country has given me and my
+						| family everything we have. It’s time to give back,
+						| especially in this current time of crisis around the
+						| world, across the country and right here at home in
+						| Vancouver East where we are facing unprecedented
+						| challenges. The prohibitive cost of housing, the
+						| general rising cost of living, the deterioration of
+						| public safety, economic instability and even
+						| annexation threats from the United States are all
+						| threats we are now facing in a way we have never felt
+						| before. Adding to this, the values of equality,
+						| diversity, inclusion, reconciliation and even Canadian
+						| sovereignty are under threat. Canadians have always
+						| proven that when we stand united and work together,
+						| there’s nothing we can’t accomplish. I’m running to
+						| protect the values that make our country strong –
+						| values which are now at risk.
+					picture
+						+source("team-with-flyers.jpg", [3456, 5184], [280, 560, 840, 1024, 1536], {
+							rect: "0,824,3456,3452",
+						})(
+							media="(min-width: 35em)"
+							sizes="auto, (min-width: 64em) 512px, 50vw"
+						)
+						+img("team-with-flyers.jpg", [3456, 5184], [343, 527, 686, 1029], {
+							rect: "0,1256,3456,2080",
+						})(
+							id="team-with-flyers"
+							alt="Mark Wiens stands with his team. Each holds flyers, wears a matching red shirt reading “better is always possible”, and gives the thumbs-up signal."
+							sizes="auto, 91vw"
+							loading="lazy"
+						)
+					p
+						| As a real estate professional, I’ve seen first-hand
+						| how the high cost and low availability of suitable
+						| housing has caused many families to make difficult
+						| decisions and huge sacrifices. My work as a Director
+						| at Greater Vancouver Realtors has allowed me to
+						| witness the challenges and opportunities for real
+						| estate at an institutional and government level. My
+						| experience volunteering with multicultural societies,
+						| and with the arts, has imprinted on me the importance
+						| of inclusion and being able to express oneself, and
+						| the untapped potential of our diverse society. As a
+						| former small business owner, I know how hard it can be
+						| to make ends meet and I understand that the government
+						| has a role in assisting businesses to expand which in
+						| turn will lead to more hiring and better jobs.
+						|
+						+img("mark-at-grocer.jpg", [3456, 5184], [180, 300, 360, 540, 600, 900], { rect: "156,1200,3300,3984" })(
+							id="mark-at-grocer"
+							alt="Mark Wiens stands at a grocer, smiling and wearing a red shirt reading “better is always possible”, and holding an apple and a flyer"
+							sizes="auto, (min-width: 39em) 300px, 48vw"
+							loading="lazy"
+						)
+						|
+						| As a husband to a first generation immigrant, I know
+						| not only the challenges immigrants face, but also the
+						| incredible benefits they will bring to our society
+						| when we support them. As a sibling to a brother who
+						| has suffered life altering mental illness for decades,
+						| I have insight into real solutions to the complex
+						| problems of mental health and the homeless crisis.
+					p
+						| Together we have so much potential. My promise to you
+						| is to work tirelessly every day across party lines to
+						| make real improvement in our society. For too long
+						| Vancouver East has not had a meaningful seat at the
+						| table in Ottawa. I’m here to listen to you, and
+						| transform your concerns and needs into meaningful
+						| change that you and your family can feel on a daily
+						| basis.
+					.clearfix
+
+			section.padded-x#get-involved
+				.flex.constrain-width
+					.prose
+						h2 Get involved
+						p
+							| Join my team and make a positive difference in
+							| bringing real change to Vancouver East! Enter your
+							| information and our team will be in contact soon.
+						+img("team-huddle.jpg", [5184, 3456], [212, 360, 424, 636, 720, 1080], {})(
+							id="team-huddle"
+							alt="Mark Wiens and his team huddle in a circle with their arms in and hands touching in the middle. They all wear matching red shirts."
+							sizes="auto, (min-width: 53em) 360px, (min-width: 35em) 38vw, (min-width: 22em) 320px, 91vw"
+							loading="lazy"
+						)
+					include partial/join-form.pug
+
+			section.padded-x#request-a-sign
+				.flex.constrain-width
+					.prose
+						h2 Request a sign
+						p
+							| Show your support for real change in Vancouver East by
+							| having a lawn sign placed at your home. Our team will
+							| confirm with you once your information has been
+							| submitted. Thank you for your support!
+					include partial/sign-form.pug
+
+			section.padded-x#donate
+				.prose.constrain-width
+					h2 Donate
+					p
+						| We need your help. Your generous donations will keep
+						| Canada moving forward, and also qualify for a tax
+						| credit of up to 75%
+					p
+						a.button(href="https://secure.liberal.ca/eda?campidVOID=7015b000002D7M8AAK&campid=7015b000002D7MIAA0&sponsorContactId=003j000000UsWkyAAF&eda=59036" target="_blank")
+							| Donate now
+							|
+							svg.line-icon(width="10" height="10" viewBox="0 0 32 32" style="vertical-align: baseline; height: 1ex; width: 1ex; overflow: visible;")
+								path(d="M30,22 V30 H2 V2 H10")
+								path(d="M13,19 L34,-2 m-15,0 h15 v15")
+
+			footer#footer
+				div
+					include partial/footer.pug

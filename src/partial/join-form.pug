@@ -1,0 +1,27 @@
+form.styled(netlify netlify-honeypot="truly-important-information" name="join-my-team" method="POST")
+	fieldset
+		label(for="join-name") Name
+		input#join-name(type="text" name="name" required autocomplete='name')
+	fieldset
+		label(for="join-email") Email address
+		input#join-email(type="email" name="email" required autocomplete="email")
+	fieldset
+		label(for="join-tel") Phone number
+		input#join-tel(type="tel" name="tel" autocomplete="tel")
+	fieldset
+		label(for="join-postal-code") Postal code
+		input#join-postal-code(type="text" name="postal-code" autocomplete="postal-code")
+	fieldset(for="join-position")
+		label(for="join-position") Position of interest
+		select#join-position(name="position" required)
+			option(value="" selected disabled) Select an option
+			option(value="Door knocking") Door knocking
+			option(value="Phone banking") Phone banking
+			option(value="Sign placement") Sign placement
+			option(value="Leadership position") Leadership position
+			option(value="Other") Other
+	fieldset.hidden
+		label(for="join-truly-important-information")
+			| Don’t fill this field
+		input#join-truly-important-information(type="text" name="truly-important-information")
+	button(type="submit") Join my team!

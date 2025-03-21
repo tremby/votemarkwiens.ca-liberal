@@ -1,0 +1,31 @@
+form.styled(netlify netlify-honeypot="truly-important-information" name="request-a-sign" method="POST")
+	fieldset
+		label(for="sign-name") Name
+		input#sign-name(type="text" name="name" required autocomplete='name')
+	fieldset
+		label(for="sign-email") Email address
+		input#sign-email(type="email" name="email" required autocomplete="email")
+	fieldset
+		label(for="sign-tel") Phone number
+		input#sign-tel(type="tel" name="tel" autocomplete="tel")
+	fieldset
+		label(for="sign-address") Address
+		textarea#sign-address(name="address" required autocomplete="street-address" rows="3")
+	fieldset
+		label(for="sign-postal-code") Postal code
+		input#sign-postal-code(type="text" name="postal-code" required autocomplete="postal-code")
+	fieldset(for="sign-type")
+		legend Requested sign type
+		.option-grid
+			input#sign-type-small(type="radio" name="sign-type" required value="Small sign")
+			label(for="sign-type-small") Small sign
+			input#sign-type-large(type="radio" name="sign-type" required value="Large sign")
+			label(for="sign-type-large") Large sign
+	fieldset
+		label(for="sign-extra-information") Any additional information?
+		textarea#sign-extra-information(name="extra-information")
+	fieldset.hidden
+		label(for="sign-truly-important-information")
+			| Don’t fill this field
+		input#sign-truly-important-information(type="text" name="truly-important-information")
+	button(type="submit") Send request

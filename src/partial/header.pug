@@ -1,0 +1,18 @@
+.content
+	.constrain-width
+		.flex
+			#title-lockup
+				svg.logo(width="64" height="64" viewBox="0 0 77.053 77.053" fill="currentColor" aria-hidden="true")
+					use(xlink:href="/logo-l.svg#logomark" height="100%" width="100%")
+				h1 #[strong Mark Wiens]#[span.visually-hidden ,] #[small Liberal Party candidate for Vancouver East]
+			#desktop-nav
+				include nav.pug
+			button#nav-toggle.unstyled(aria-label="Toggle navigation" title="Toggle navigation" aria-controls="main-nav")
+				svg.line-icon(width="32" height="32" viewBox="0 0 32 32")
+					line(x1="2" y1="6" x2="28" y2="6")
+					line(x1="2" y1="16" x2="28" y2="16")
+					line(x1="2" y1="26" x2="28" y2="26")
+#main-nav(inert)
+	.constrain-width
+		nav(aria-label="Main navigation")
+			include nav.pug
