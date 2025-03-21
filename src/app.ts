@@ -91,7 +91,7 @@ function detectSafari() {
 function init() {
 	selectOrFail("#nav-toggle", HTMLButtonElement).addEventListener("click", () => toggleNav());
 	selectOrFail("#main-nav").addEventListener("click", handleNavClick);
-	selectOrFail("body").addEventListener("keydown", handleRootKeydown);
+	window.addEventListener("keydown", handleRootKeydown);
 	initScrollSpy();
 	detectSafari();
 }
