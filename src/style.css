@@ -794,9 +794,7 @@ dl.grid {
 	background: var(--liberal-red);
 	color-scheme: dark;
 	color: white;
-	min-height: 70vh;
-	display: grid;
-	align-content: center;
+	padding-bottom: calc(var(--padding-std) * 8);
 
 	.content {
 		padding: calc(var(--padding-std) * 4) var(--padding-std);
