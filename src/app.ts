@@ -12,6 +12,7 @@ function toggleNav(force: boolean | undefined = undefined) {
 	const nav = selectOrFail("#main-nav");
 	const isOpen = nav.classList.toggle("is-open", force);
 	nav.inert = !isOpen;
+	selectOrFail("main").inert = isOpen;
 	const button = selectOrFail("#nav-toggle", HTMLButtonElement);
 	button.ariaExpanded = isOpen ? "true" : "false";
 }
