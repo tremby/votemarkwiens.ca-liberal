@@ -56,6 +56,9 @@
 	/* Calculated */
 	--header-height: calc(var(--header-logo-size) + var(--padding-std) * 2);
 	--padding-section: calc(var(--padding-std) * 4);
+	--focus-ring-color-light: var(--liberal-red);
+	--focus-ring-color-dark: white;
+	--focus-ring-color: var(--focus-ring-color-light); /* Changes based on context; see .light and .dark */
 }
 
 html {
@@ -120,6 +123,11 @@ hr {
 
 a {
 	color: inherit;
+
+	&:focus-visible {
+		outline: 2px solid var(--focus-ring-color);
+		outline-offset: 2px;
+	}
 }
 
 audio,
@@ -207,6 +215,22 @@ textarea {
 	fill: none;
 }
 
+.dark {
+	--focus-ring-color: var(--focus-ring-color-dark);
+	.light {
+		--focus-ring-color: var(--focus-ring-color-light);
+		.dark {
+			--focus-ring-color: var(--focus-ring-color-dark);
+			.light {
+				--focus-ring-color: var(--focus-ring-color-light);
+				.dark {
+					--focus-ring-color: var(--focus-ring-color-dark);
+				}
+			}
+		}
+	}
+}
+
 form.styled button, button.styled, .button {
 	text-decoration: none;
 	display: inline-block;
@@ -255,9 +279,16 @@ form.styled {
 		accent-color: auto; /* IOS sets the text colour to accent colour */
 	}
 
-	input[type="radio"] {
+	input:is([type="radio"], [type="checkbox"]) {
 		width: 1.2rem;
 		height: 1.2rem;
+	}
+
+	input:is([type="text"], [type="email"], [type="tel"], [type="radio"], [type="checkbox"]), textarea, select, button {
+		&:focus-visible {
+			outline: 2px solid var(--focus-ring-color);
+			outline-offset: 2px;
+		}
 	}
 
 	.option-grid {

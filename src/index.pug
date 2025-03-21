@@ -15,10 +15,10 @@ html(lang="en-CA")
 		include partial/head.pug
 	body
 		a#skip-link.visually-hidden.focusable(href="#main") Skip to main content
-		header#header
+		header#header.dark
 			include partial/header.pug
 		main#main
-			section#hero
+			section#hero.dark
 				picture.bg-image-picture
 					+source("background.jpg", [4000, 2669], widthsFull, { ar: "3:1" })(
 						media="(min-width: 100em)"
@@ -71,7 +71,7 @@ html(lang="en-CA")
 						|
 						small for Vancouver East
 
-			section.padded-x#meet-mark
+			section.padded-x#meet-mark.dark
 				.prose.constrain-width
 					picture
 						+source("mark-at-park.jpg", [3456, 5184], [384, 768, 1152], {
@@ -199,7 +199,7 @@ html(lang="en-CA")
 						| I’m here to listen to you, and transform your concerns and needs into meaningful change that you and your family can feel on a daily basis.
 					.clearfix
 
-			section.padded-x#get-involved
+			section.padded-x#get-involved.dark
 				.flex.constrain-width
 					.prose
 						h2 Get involved
@@ -214,7 +214,7 @@ html(lang="en-CA")
 						)
 					include partial/join-form.pug
 
-			section.padded-x#request-a-sign
+			section.padded-x#request-a-sign.dark
 				.flex.constrain-width
 					.prose
 						h2 Request a sign
@@ -238,6 +238,6 @@ html(lang="en-CA")
 								path(d="M30,22 V30 H2 V2 H10")
 								path(d="M13,19 L34,-2 m-15,0 h15 v15")
 
-			footer#footer
+			footer#footer.dark
 				div
 					include partial/footer.pug
