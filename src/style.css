@@ -601,7 +601,7 @@ dl.grid {
 		#family-image-3 { display: none; }
 		#family-image-4 { display: inline; }
 	}
-	@media only screen and (min-width: 51em) {
+	@media only screen and (min-width: 58em) {
 		#family-image-4 { display: none; }
 		#family-image-5 { display: inline; }
 	}
