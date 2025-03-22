@@ -31,8 +31,7 @@ html(lang="en-CA")
 					)
 					+img("background.jpg", [4000, 2669], widthsFull, { rect: "200,500,2500,1669", ar: "4:3" })(
 						alt=""
-						sizes="auto, 100vw"
-						loading="lazy"
+						sizes="100vw"
 						class="bg-image"
 					)
 
@@ -51,12 +50,11 @@ html(lang="en-CA")
 					picture.portrait-image-picture
 						+source("mark-portrait.png", [6302, 8359], [215, 422, 844, 1266], {})(
 							media="(min-width: 28em)"
-							sizes="auto, (min-width: 55em) 422px, 48vw"
+							sizes="(min-width: 55em) 422px, 48vw"
 						)
 						+img("mark-portrait.png", [6302, 8359], [160, 320, 480], { rect: "0.17,0,5231,8359" })(
 							alt="Mark Wiens smiles at the camera, wearing a suit and tie"
 							sizes="auto, 42.67vw"
-							loading="lazy"
 							class="portrait-image"
 						)
 
