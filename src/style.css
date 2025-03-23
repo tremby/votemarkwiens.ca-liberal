@@ -52,6 +52,9 @@
 	--base-font-size: 18px;
 	--float-image-margin-y: 0.5em;
 	--float-image-margin-x: 0.75em;
+	--input-radius: 3px;
+	--media-radius: 3px;
+	--constrained-width: 60rem;
 
 	/* Calculated */
 	--header-height: calc(var(--header-logo-size) + var(--padding-std) * 2);
@@ -201,9 +204,8 @@ textarea {
 
 .constrain-width {
 	box-sizing: content-box;
-	max-width: 60rem;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: var(--constrained-width);
+	margin-inline: auto;
 }
 
 .padded-x {
@@ -281,7 +283,7 @@ form.styled {
 	input:is([type="text"], [type="email"], [type="tel"]), textarea, select {
 		font-family: inherit;
 		font-size: inherit;
-		border-radius: 3px;
+		border-radius: var(--input-radius);
 		border: 1px solid color-mix(in lch, var(--liberal-grey), white 50%);
 		padding: calc(var(--padding-std) / 2);
 		background: white;
@@ -611,7 +613,7 @@ dl.grid {
 		width: 37.3333vw;
 		max-width: 280px;
 		height: auto;
-		border-radius: 3px;
+		border-radius: var(--media-radius);
 
 		@media only screen and (min-width: 50em) {
 			width: 384px;
@@ -669,7 +671,7 @@ dl.grid {
 	padding: var(--padding-section) var(--padding-std);
 
 	#team-with-flyers {
-		border-radius: 3px;
+		border-radius: var(--media-radius);
 		width: 100%;
 		height: auto;
 		margin-bottom: var(--float-image-margin-y);
@@ -684,7 +686,7 @@ dl.grid {
 	}
 
 	#mark-at-grocer {
-		border-radius: 3px;
+		border-radius: var(--media-radius);
 		float: right;
 		margin-block: var(--float-image-margin-y);
 		margin-left: var(--float-image-margin-x);
@@ -728,7 +730,7 @@ dl.grid {
 
 	#team-huddle {
 		display: block;
-		border-radius: 3px;
+		border-radius: var(--media-radius);
 		width: 100%;
 		max-width: 360px;
 		height: auto;
