@@ -322,10 +322,10 @@ button.unstyled {
 	cursor: pointer;
 	outline: revert;
 }
-:is(ul, ol, dl, address).unstyled {
+:where(ul, ol, dl, address).unstyled {
 	display: block;
 }
-:is(ul, ol, dl).unstyled > :is(li, dt, dd) {
+:where(ul, ol, dl).unstyled > :is(li, dt, dd) {
 	all: unset;
 	display: block;
 }
@@ -492,7 +492,7 @@ dl.grid {
 		outline: none;
 	}
 
-	ul {
+	ul.site-navigation {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
@@ -501,6 +501,14 @@ dl.grid {
 		a {
 			text-decoration: none;
 		}
+	}
+
+	#main-nav-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: var(--padding-section);
 	}
 }
 
@@ -864,6 +872,25 @@ dl.grid {
 		text-align: center;
 		font-size: 0.8rem;
 		font-weight: 900;
+	}
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	gap: calc(var(--padding-std) * 2);
+
+	a {
+		display: inline-block;
+		border-radius: 200px;
+		overflow: hidden;
+	}
+
+	svg {
+		display: block;
+		width: 32px;
+		height: 32px;
+		fill: currentColor
 	}
 }
 
