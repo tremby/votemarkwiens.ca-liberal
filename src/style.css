@@ -603,6 +603,33 @@ dl.grid {
 	}
 }
 
+#video iframe {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+}
+
+@media only screen and (min-width: 46em) {
+	#hero .tagline {
+		margin-bottom: 64px;
+	}
+
+	#video {
+		margin-top: -64px;
+		box-sizing: content-box;
+		max-width: var(--constrained-width);
+		margin-inline: auto;
+		padding-inline: calc(var(--padding-std) * 2);
+
+		iframe {
+			z-index: 1;
+			position: relative;
+			border-radius: var(--media-radius);
+		}
+	}
+}
+
 #meet-mark {
 	padding: var(--padding-section) var(--padding-std);
 
