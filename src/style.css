@@ -662,6 +662,7 @@ dl.grid {
 		border-radius: 3px;
 		width: 100%;
 		height: auto;
+		margin-bottom: var(--float-image-margin-y);
 
 		@media only screen and (min-width: 35em) {
 			width: 50vw;
