@@ -50,8 +50,8 @@
 	--padding-std: 16px;
 	--header-logo-size: clamp(2.75rem, 12vw, 3.5rem);
 	--base-font-size: 18px;
-	--float-image-margin-y: 0.25em;
-	--float-image-margin-x: 0.5em;
+	--float-image-margin-y: 0.5em;
+	--float-image-margin-x: 0.75em;
 
 	/* Calculated */
 	--header-height: calc(var(--header-logo-size) + var(--padding-std) * 2);
