@@ -320,6 +320,7 @@ form.styled {
 }
 button.unstyled {
 	cursor: pointer;
+	outline: revert;
 }
 :is(ul, ol, dl, address).unstyled {
 	display: block;
@@ -327,6 +328,11 @@ button.unstyled {
 :is(ul, ol, dl).unstyled > :is(li, dt, dd) {
 	all: unset;
 	display: block;
+}
+
+button:focus-visible {
+	outline: 2px solid var(--accent-color);
+	outline-offset: 2px;
 }
 
 dl.grid {
