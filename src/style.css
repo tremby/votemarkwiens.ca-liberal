@@ -56,9 +56,9 @@
 	/* Calculated */
 	--header-height: calc(var(--header-logo-size) + var(--padding-std) * 2);
 	--padding-section: calc(var(--padding-std) * 4);
-	--focus-ring-color-light: var(--liberal-red);
-	--focus-ring-color-dark: white;
-	--focus-ring-color: var(--focus-ring-color-light); /* Changes based on context; see .light and .dark */
+	--accent-color-light: var(--liberal-red);
+	--accent-color-dark: white;
+	--accent-color: var(--liberal-red); /* Changes based on context; see .light and .dark */
 }
 
 html {
@@ -69,7 +69,7 @@ html {
 	font-family: var(--font-base);
 	scroll-padding-top: var(--header-height);
 	scroll-behavior: smooth;
-	accent-color: var(--liberal-red);
+	accent-color: var(--accent-color);
 
 	@media (prefers-reduced-motion) {
 		scroll-behavior: initial;
@@ -125,7 +125,7 @@ a {
 	color: inherit;
 
 	&:focus-visible {
-		outline: 2px solid var(--focus-ring-color);
+		outline: 2px solid var(--accent-color);
 		outline-offset: 2px;
 	}
 }
@@ -220,15 +220,15 @@ textarea {
 }
 
 .dark {
-	--focus-ring-color: var(--focus-ring-color-dark);
+	--accent-color: var(--accent-color-dark);
 	.light {
-		--focus-ring-color: var(--focus-ring-color-light);
+		--accent-color: var(--accent-color-light);
 		.dark {
-			--focus-ring-color: var(--focus-ring-color-dark);
+			--accent-color: var(--accent-color-dark);
 			.light {
-				--focus-ring-color: var(--focus-ring-color-light);
+				--accent-color: var(--accent-color-light);
 				.dark {
-					--focus-ring-color: var(--focus-ring-color-dark);
+					--accent-color: var(--accent-color-dark);
 				}
 			}
 		}
