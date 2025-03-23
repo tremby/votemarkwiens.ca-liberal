@@ -53,7 +53,7 @@
 	--float-image-margin-y: 0.5em;
 	--float-image-margin-x: 0.75em;
 	--input-radius: 3px;
-	--media-radius: 3px;
+	--media-radius: 5px;
 	--constrained-width: 60rem;
 
 	/* Calculated */
