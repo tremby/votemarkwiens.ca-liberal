@@ -11,3 +11,7 @@ https://www.votemarkweins.ca/* https://www.votemarkwiens.ca/:splat 301!
 https://votemarkweins.ca/* https://www.votemarkwiens.ca/:splat 301!
 
 # Finally votemarkwiens.ca is redirected by Netlify, and www.votemarkwiens.ca doesn't need redirection
+
+# Vanity URLs
+/donate https://secure.liberal.ca/eda?utm_source=secure.liberal.ca--victoryfund&utm_medium=donation-switch&utm_content=make-this-one-time-gift&campidVOID=7015b000002D7M8AAK&campid=7015b000002D7MIAA0&sponsorContactId=003j000000UsWkyAAF&eda=59036 302
+/support https://secure.liberal.ca/eda?utm_source=secure.liberal.ca--victoryfund&utm_medium=donation-switch&utm_content=make-this-one-time-gift&campidVOID=7015b000002D7M8AAK&campid=7015b000002D7MIAA0&sponsorContactId=003j000000UsWkyAAF&eda=59036 302
