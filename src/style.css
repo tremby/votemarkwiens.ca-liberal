@@ -680,7 +680,7 @@ dl.grid {
 		}
 	}
 	
-	#family-image-2, #family-image-3, #family-image-4, #family-image-5 {
+	#family-image-2, #family-image-3, #family-image-4 {
 		display: none;
 	}
 
@@ -695,10 +695,6 @@ dl.grid {
 	@media only screen and (min-width: 46em) {
 		#family-image-3 { display: none; }
 		#family-image-4 { display: inline; }
-	}
-	@media only screen and (min-width: 58em) {
-		#family-image-4 { display: none; }
-		#family-image-5 { display: inline; }
 	}
 
 	#meet-clearfix {
