@@ -502,7 +502,6 @@ dl.grid {
 
 #hero {
 	position: relative;
-	background: var(--accent-steel);
 	overflow: hidden;
 	display: grid;
 
