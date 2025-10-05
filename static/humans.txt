@@ -1,2 +1,3 @@
 Textual content by Mark Wiens
+Photography by Scott Kuo and Cliff Ma
 Programming by Bart Nagel <b@rtnagel.ca>
