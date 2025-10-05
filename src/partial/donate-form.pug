@@ -1,10 +1,14 @@
 form.styled(netlify netlify-honeypot="truly-important-information" name="donate" method="POST")
 	fieldset
-		label(for="donate-amount") Amount
-		input#donate-amount(type="number" name="amount" required autocomplete='off')
+		label(for="donate-amount")
+			| Amount
+			span.visually-hidden in dollars
+		span(style="display: flex; gap: 0.5em; align-items: center;")
+			span(aria-hidden) $
+			input#donate-amount(type="number" name="amount" required autocomplete="off" style="flex-grow: 1")
 	fieldset
 		label(for="donate-name") Name
-		input#donate-name(type="text" name="name" required autocomplete='name')
+		input#donate-name(type="text" name="name" required autocomplete="name")
 	fieldset
 		label(for="donate-address") Address
 		textarea#donate-address(type="text" name="address" required autocomplete="street-address")
