@@ -25,7 +25,7 @@ fs.writeFileSync("dist/index.html", pug.renderFile("src/index.pug", {
  * Get a URL to an imgix image
  */
 function imgixSrc(src, width, options) {
-	const url = new URL(`https://votemarkwiens.imgix.net/liberal/${src}`);
+	const url = new URL(`https://votemarkwiens.imgix.net/richmond/${src}`);
 	for (const [key, value] of Object.entries({
 		...IMGIX_DEFAULTS,
 		...options,

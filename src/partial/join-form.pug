@@ -11,16 +11,6 @@ form.styled(netlify netlify-honeypot="truly-important-information" name="join-my
 	fieldset
 		label(for="join-postal-code") Postal code
 		input#join-postal-code(type="text" name="postal-code" autocomplete="postal-code")
-	fieldset(for="join-position")
-		label(for="join-position") Position of interest
-		select#join-position(name="position" required)
-			option(value="" selected disabled) Select an option
-			option(value="Door knocking") Door knocking
-			option(value="Drive voters") Drive voters
-			option(value="Phone banking") Phone banking
-			option(value="Sign placement") Sign placement
-			option(value="Leadership position") Leadership position
-			option(value="Other") Other
 	fieldset.hidden
 		label(for="join-truly-important-information")
 			| Don’t fill this field

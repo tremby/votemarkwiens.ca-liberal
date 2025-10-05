@@ -1,0 +1,29 @@
+form.styled(netlify netlify-honeypot="truly-important-information" name="donate" method="POST")
+	fieldset
+		label(for="donate-name") Name
+		input#donate-name(type="text" name="name" required autocomplete='name')
+	fieldset
+		label(for="donate-address") Address
+		textarea#donate-address(type="text" name="address" required autocomplete="street-address")
+	fieldset
+		label(for="donate-city") City
+		input#donate-city(type="text" name="city" required autocomplete="address-level2")
+	fieldset
+		label(for="donate-province") Province
+		input#donate-province(type="text" name="province" required autocomplete="address-level1")
+	fieldset
+		label(for="donate-postal-code") Postal code
+		input#donate-postal-code(type="text" name="postal-code" autocomplete="postal-code")
+	fieldset
+		label(for="donate-tel") Phone number
+		input#donate-tel(type="tel" name="tel" autocomplete="tel")
+	fieldset
+		label
+			input(type="checkbox" name="confirm-eligibility" required)
+			|
+			| Yes, I am eligible to make a political donation and confirm that I am a Canadian citizen.
+	fieldset.hidden
+		label(for="donate-truly-important-information")
+			| Don’t fill this field
+		input#donate-truly-important-information(type="text" name="truly-important-information")
+	button(type="submit") Submit

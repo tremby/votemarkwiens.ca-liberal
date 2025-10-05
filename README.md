@@ -1,5 +1,5 @@
-Vote Mark Wiens (Liberal) website
-=================================
+Vote Mark Wiens (Political) website
+===================================
 
 Images
 ------
