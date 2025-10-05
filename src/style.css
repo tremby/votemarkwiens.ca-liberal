@@ -20,17 +20,7 @@
 :root {
 	--main-red: #d9320d;
 	--darker-red: #600000;
-	--main-red-shade-1: color-mix(in oklab, var(--main-red), var(--darker-red) 20%);
-	--main-red-shade-2: color-mix(in oklab, var(--main-red), var(--darker-red) 40%);
-	--main-red-shade-3: color-mix(in oklab, var(--main-red), var(--darker-red) 60%);
-	--main-grey: #414042;
-	--main-grey-tint-1: #6d6e70;
-	--main-grey-tint-2: #dbdcde;
-	--main-grey-tint-3: #f1f1f2;
-	--accent-steel: #3d4f5d;
-	--accent-blue: #0babe3;
-	--accent-green: #6ebf52;
-	--accent-yellow: #f9b717;
+	--accent-steel: #2d3346;;
 
 	/* Fonts */
 	--font-base: Lato, lato-fallback, sans-serif;
@@ -52,6 +42,16 @@
 	--accent-color-light: var(--main-red);
 	--accent-color-dark: white;
 	--accent-color: var(--main-red); /* Changes based on context; see .light and .dark */
+	--main-red-shade-1: color-mix(in oklab, var(--main-red), var(--darker-red) 20%);
+	--main-red-shade-2: color-mix(in oklab, var(--main-red), var(--darker-red) 40%);
+	--main-red-shade-3: color-mix(in oklab, var(--main-red), var(--darker-red) 60%);
+
+	--selection-bg-light: var(--accent-steel);
+	--selection-fg-light: white;
+	--selection-bg-dark: white;
+	--selection-fg-dark: var(--accent-steel);
+	--selection-bg: var(--selection-bg-light);
+	--selection-fg: var(--selection-fg-light);
 }
 
 html {
@@ -74,15 +74,15 @@ html, body {
 }
 
 ::-moz-selection {
-	background: var(--accent-steel);
+	background: var(--selection-bg);
 	text-shadow: none;
-	color: white;
+	color: var(--selection-fg);
 }
 
 ::selection {
-	background: var(--accent-steel);
+	background: var(--selection-bg);
 	text-shadow: none;
-	color: white;
+	color: var(--selection-fg);
 }
 
 p, h1, h2, h3, h4, h5, h6, dl, ul, ol, li, dt, dd {
@@ -208,14 +208,24 @@ textarea {
 
 .dark {
 	--accent-color: var(--accent-color-dark);
+	--selection-bg: var(--selection-bg-dark);
+	--selection-fg: var(--selection-fg-dark);
 	.light {
 		--accent-color: var(--accent-color-light);
+		--selection-bg: var(--selection-bg-light);
+		--selection-fg: var(--selection-fg-light);
 		.dark {
 			--accent-color: var(--accent-color-dark);
+			--selection-bg: var(--selection-bg-dark);
+			--selection-fg: var(--selection-fg-dark);
 			.light {
 				--accent-color: var(--accent-color-light);
+				--selection-bg: var(--selection-bg-light);
+				--selection-fg: var(--selection-fg-light);
 				.dark {
 					--accent-color: var(--accent-color-dark);
+					--selection-bg: var(--selection-bg-dark);
+					--selection-fg: var(--selection-fg-dark);
 				}
 			}
 		}
@@ -269,7 +279,7 @@ form.styled {
 		font-family: inherit;
 		font-size: inherit;
 		border-radius: var(--input-radius);
-		border: 1px solid color-mix(in lch, var(--main-grey), white 50%);
+		border: 1px solid color-mix(in lch, var(--accent-steel), white 50%);
 		padding: calc(var(--padding-std) / 2);
 		background: white;
 		color: black;
@@ -651,7 +661,7 @@ dl.grid {
 }
 
 #get-involved {
-	background: var(--main-grey);
+	background: var(--accent-steel);
 	color: white;
 	padding: var(--padding-section) var(--padding-std);
 
