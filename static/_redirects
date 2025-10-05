@@ -15,4 +15,4 @@ https://votemarkweins.ca/* https://www.votemarkwiens.ca/:splat 301!
 # Vanity URLs
 /volunteer /#get-involved 302
 /donate /#donate 302
-/support /#get-involved
+/support /#donate 302
