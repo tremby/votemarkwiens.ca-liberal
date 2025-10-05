@@ -275,7 +275,7 @@ form.styled {
 		font-weight: 700;
 	}
 
-	input:is([type="text"], [type="email"], [type="tel"]), textarea, select {
+	input:is([type="text"], [type="number"], [type="email"], [type="tel"]), textarea, select {
 		font-family: inherit;
 		font-size: inherit;
 		border-radius: var(--input-radius);

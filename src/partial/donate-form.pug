@@ -1,5 +1,8 @@
 form.styled(netlify netlify-honeypot="truly-important-information" name="donate" method="POST")
 	fieldset
+		label(for="donate-amount") Amount
+		input#donate-amount(type="number" name="amount" required autocomplete='off')
+	fieldset
 		label(for="donate-name") Name
 		input#donate-name(type="text" name="name" required autocomplete='name')
 	fieldset
